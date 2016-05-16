@@ -29,7 +29,7 @@ public $user_id;
 		} else {
 
 			$pdo = Database::connect();
-			$sql = "INSERT INTO user (username,email,password,) values(?, ?, ?)";
+			$sql = "INSERT INTO user (username,email,password) values(?, ?, ?)";
 			$q = $pdo->prepare($sql);
 			$q->execute(array($username,$email,$password));
 
