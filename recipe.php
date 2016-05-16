@@ -11,7 +11,7 @@
 <br><br><br><br><br><br>
 
 
-<p>This is where stuff goes</p>
+<p>This is RECIPE</p>
 <p>Welcome <i><?php echo $_SESSION['username']; ?></i></p>
 
 

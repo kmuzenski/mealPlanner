@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+<?php require_once('header.php'); ?>
 
 <body>
-
-	<br><br><br><br><br><br>
+<?php require_once('nav.php'); ?>
+<br><br><br><br><br><br>
 
 <center>
 	<div class "container">
@@ -31,7 +32,7 @@
 	</div>
 
 	<br><br><br><br><br>
-
+<?php require_once('footer.php'); ?>
 </center>
 </body>
 </html>

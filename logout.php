@@ -8,9 +8,9 @@ echo "you have been logged out";
 
 <!DOCTYPE html>
 <html>
-
+<?php require_once('header.php'); ?>
 <body>
-
+<?php require_once('nav.php'); ?>
 <br><br><br><br><br><br>
 
 <p>You have been logged out<br><br>
@@ -19,5 +19,7 @@ echo "you have been logged out";
 </p>
 
 
+<br><br><br><br><br><br>
+<?php require_once('footer.php'); ?>
 </body>
 </html>
