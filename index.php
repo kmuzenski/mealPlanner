@@ -56,6 +56,7 @@
 
 
 <p>This is where stuff goes</p>
+<p>Welcome : <i><?php echo $_SESSION['username']; ?></i></p>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
