@@ -23,7 +23,7 @@
           if ($loggedin) {
             echo '<li>';
             echo '<a href="recipe.php">';
-            echo "Logout";
+            echo "Recipe";
             echo '</a>';
             echo '</li>';
             echo '<li>';
