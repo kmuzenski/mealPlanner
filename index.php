@@ -4,7 +4,7 @@
 <html>
 
 <?php require_once('header.php'); ?>
-<?php header('Access-Control-Allow-Origin: *'); ?>
+<?php header('Access-Control-Allow-Origin: http://ec2-52-32-48-99.us-west-2.compute.amazonaws.com/mealPlanner'); ?>
 
 <body>
 
