@@ -26,7 +26,7 @@
 function request() {	
 	return $.ajax({
 		type:'GET',
-		dataType:'jsonp',
+		dataType:'json',
 		cache: false,
 
 
