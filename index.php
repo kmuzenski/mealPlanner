@@ -4,6 +4,7 @@
 <html>
 
 <?php require_once('header.php'); ?>
+<?php header('Access-Control-Allow-Origin: *'); ?>
 
 <body>
 
