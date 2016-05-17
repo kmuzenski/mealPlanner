@@ -37,8 +37,8 @@ function request() {
 
 					var output = ' ';
 					$.each(r.results.slice(1,9), function(key, value){
-						console.log(value.title);
-						$("#app").append('<div class=col-md-4><p>' + value.title + '</p></div>');
+						console.log(value.recipes.title);
+						$("#app").append('<div class=col-md-4><p>' + value.recipes.title + '</p></div>');
 			
 						
 					});
