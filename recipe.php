@@ -17,16 +17,14 @@ require_once 'session.php';
 	
       $recipe = new recipeCrud($_SESSION['uid']);
 
-	$response = $recipe->create($name,$category_FK,$description,$calories,$cooktime,$ingredients,$instructions);
+      $response = $recipe->create($name,$category_FK,$description,$calories,$cooktime,$ingredients,$instructions);
   
-if ($response) {
-    header("Location: update.php");
-  } else {
-    header("Location: update.php");
-  }
+      if ($response) {
+          header("Location: update.php");
+        } else {
+          header("Location: update.php");
+        }
 }
-
-
 
 ?>
 
@@ -47,8 +45,9 @@ if ($response) {
 <div class="container">
       <div class="span10 offset1">
         <div class="row">
-          <h3>Please fill out all fields to create a recipe</h3>
+          <h3>Please fill out all fields to create a recipe!</h3>
         </div>           
+        
         <form class="form-horizontal" action="recipe.php" method="post"> 
 
           <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
