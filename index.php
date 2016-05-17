@@ -33,7 +33,7 @@ function request() {
 	
 		url: "http://food2fork.com/api/search?key=41ea6ca476ba23e6554856b78d66c9d6&q=shredded%20chicken",
 		success: function(r) {
-			
+					console.log(r);
 
 					var output = ' ';
 					$.each(r.results.slice(1,9), function(key, value){
