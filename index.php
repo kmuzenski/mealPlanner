@@ -4,7 +4,6 @@
 <html>
 
 <?php require_once('header.php'); ?>
-<?php header('Access-Control-Allow-Origin: http://ec2-52-32-48-99.us-west-2.compute.amazonaws.com/mealPlanner'); ?>
 
 <body>
 
@@ -23,34 +22,7 @@
 
 
 <?php require_once('footer.php'); ?>
-<script>
-function request() {	
-	return $.ajax({
-		type:'GET',
-		dataType:'json',
-		cache: false,
-
-
-	
-		url: "http://food2fork.com/api/search?key=41ea6ca476ba23e6554856b78d66c9d6&q=shredded%20chicken",
-		success: function(r) {
-					console.log(r);
-
-					var output = ' ';
-					$.each(r.results.slice(1,9), function(key, value){
-						console.log(value.recipes.title);
-						$("#app").append('<div class=col-md-4><p>' + value.recipes.title + '</p></div>');
-			
-						
-					});
-	
-				}
-	})
-}
-
-
-request();
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
