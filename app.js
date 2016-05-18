@@ -1,7 +1,7 @@
 function request() {	
 	return $.ajax({
 		type:'GET',
-		dataType:'json',
+		dataType:'jsonp',
 		cache: false,
 
 
