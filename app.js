@@ -2,7 +2,7 @@ function request() {
 	return $.ajax({
 		crossDomain: true,
 		type:'GET',
-		dataType:'jsonp',
+		dataType:'json',
 		cache: false,
 
 
