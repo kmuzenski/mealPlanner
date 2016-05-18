@@ -1,5 +1,6 @@
 function request() {	
 	return $.ajax({
+		crossDomain: true,
 		type:'GET',
 		dataType:'jsonp',
 		cache: false,
