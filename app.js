@@ -6,7 +6,7 @@ function request() {
 
 
 	
-		url: "http://food2fork.com/api/search?key=41ea6ca476ba23e6554856b78d66c9d6&q=shredded%20chicken",
+		url: "http://food2fork.com/api/search?key=41ea6ca476ba23e6554856b78d66c9d6&q=shredded%20chicken&callback=?",
 		success: function(r) {
 					console.log(r);
 
