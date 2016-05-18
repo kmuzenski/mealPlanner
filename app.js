@@ -1,12 +1,12 @@
 function request() {	
 	return $.ajax({
 		type:'GET',
-		dataType:'jsonp',
+		dataType:'json',
 		cache: false,
 
 
 	
-		url: "http://food2fork.com/api/search?key=41ea6ca476ba23e6554856b78d66c9d6&q=shredded%20chicken&callback=?",
+		url: "http://food2fork.com/api/search?key=41ea6ca476ba23e6554856b78d66c9d6&q=shredded%20chicken",
 		success: function(r) {
 					console.log(r);
 
